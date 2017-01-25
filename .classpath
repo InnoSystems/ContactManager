@@ -12,5 +12,6 @@
 	<classpathentry kind="lib" path="C:/Frameworks/hibernate-release-5.2.7.Final/lib/required/jandex-2.0.3.Final.jar"/>
 	<classpathentry kind="lib" path="C:/Frameworks/hibernate-release-5.2.7.Final/lib/required/javassist-3.20.0-GA.jar"/>
 	<classpathentry kind="lib" path="C:/Frameworks/hibernate-release-5.2.7.Final/lib/required/jboss-logging-3.3.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Program Files (x86)/H2/bin/h2-1.4.193.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
