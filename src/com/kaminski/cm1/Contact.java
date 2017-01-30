@@ -26,6 +26,11 @@ public class Contact {
         this.telephone = telephone;
     }
     
+    @Override
+    public String toString(){
+	return id + ", " + name + ", " + email + ", " + address + ", " + telephone;
+    }
+    
     public int getId() {
         return id;
     }
