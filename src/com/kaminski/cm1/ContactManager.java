@@ -58,10 +58,10 @@ public class ContactManager {
 	System.out.println("Contact4's name: " + contact4.getName());
 
 	// updates a loaded instance of a Contact object
-	Contact contact5 = (Contact) session.load(Contact.class, new Integer(5));
-	contact5.setEmail("info1atcompany.com");
-	contact5.setTelephone("1234567890");
-	session.update(contact5);
+	//Contact contact5 = (Contact) session.load(Contact.class, new Integer(5));
+//	contact5.setEmail("info1atcompany.com");
+//	contact5.setTelephone("1234567890");
+//	session.update(contact5);
 	// updates a detached instance of a Contact object
 	Contact contact6 = new Contact(3, "Jobs", "jobsatapplet.com", "Cupertino", "0123456789");
 	session.update(contact6);
