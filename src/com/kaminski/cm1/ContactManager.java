@@ -71,8 +71,8 @@ public class ContactManager {
 	contact7.setId(7);
 	session.delete(contact7);
 	// deletes a loaded instance of an object
-	Contact contact8 = (Contact) session.load(Contact.class, new Integer(8));
-	session.delete(contact8);
+	//Contact contact8 = (Contact) session.load(Contact.class, new Integer(8));
+	//session.delete(contact8);
 
 	// commits the transaction and closes the session
 	session.getTransaction().commit();
