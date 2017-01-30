@@ -15,15 +15,13 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
  *
  */
 public class ContactManager {
+    
+    
 
     public static void main(String[] args) {
 
 	// A SessionFactory is set up once for an application!
-	final StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure() // configures
-												  // settings
-												  // from
-												  // hibernate.cfg.xml
-		.build();
+	final StandardServiceRegistry registry = new StandardServiceRegistryBuilder().configure().build();
 	SessionFactory sessionFactory = null;
 	try {
 	    sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
@@ -32,7 +30,7 @@ public class ContactManager {
 	    // trouble building the SessionFactory
 	    // so destroy it manually.
 	    StandardServiceRegistryBuilder.destroy(registry);
-	    System.out.println("Exception on Create ContactManager " + e);
+	    System.out.println("Exception on CREATE ContactManager " + e);
 	}
 
 	// opens a new session from the session factory
@@ -58,7 +56,7 @@ public class ContactManager {
 	System.out.println("Contact4's name: " + contact4.getName());
 
 	// updates a loaded instance of a Contact object
-	Contact contact5 = (Contact) session.load(Contact.class, new Integer(5)); //h1
+	Contact contact5 = (Contact) session.load(Contact.class, new Integer(5)); // h1
 	contact5.setEmail("info1atcompany.com");
 	contact5.setTelephone("1234567890");
 	session.update(contact5);
