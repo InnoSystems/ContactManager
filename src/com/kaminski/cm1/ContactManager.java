@@ -77,6 +77,5 @@ public class ContactManager {
 	// commits the transaction and closes the session
 	session.getTransaction().commit();
 	session.close();
-
     }
 }
